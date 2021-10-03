@@ -1,14 +1,26 @@
+/**
+ * class to check if password is valid
+ * need to set password's minLength in constructor before validation
+ * also can give minLength and specialSymbols char[] to constructor to create specific special symbols list
+ */
+
+
 public class PasswordChecker {
 
-    private char[] specialSymbols = {'!', '@', '#', '$', '%', '^', '&', '*'};
+    private char[] specialSymbols;
     private int minLength;
 
     public PasswordChecker(int minLength) {
         this.minLength = minLength;
+        specialSymbols = new char[]{'!', '@', '#', '$', '%', '^', '&', '*'};
+    }
+
+    public PasswordChecker(int minLength, char[] specialSymbols) {
+        this.minLength = minLength;
+        this.specialSymbols = specialSymbols;
     }
 
     public boolean validate(String password) {
-        char[] passwordSymbols = password.toCharArray();
         return  password != null && checkLength(password) && checkUpperCase(password)  && checkSpecialSymbols(password);
 
     }

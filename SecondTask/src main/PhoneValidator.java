@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 
+/**
+ * class to validate phone number
+ */
 
 public class PhoneValidator {
 
     private ArrayList<ValidationRule> phoneRules = new ArrayList<>();
 
     public PhoneValidator() {
-        new ArrayList<String>().add("tld");
         phoneRules.add(new ValidationRule("+370", 12, "LT"));
     }
 

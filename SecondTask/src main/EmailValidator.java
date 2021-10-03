@@ -1,9 +1,13 @@
 import java.util.ArrayList;
 
+/**
+ * checks if the email is valid
+ * default TLDs are com, lt, org
+ * if there is a need to add more TLDs need to give list to class constructor
+*/
 public class EmailValidator {
 
     ArrayList<String> correctTLDs = new ArrayList<>();
-
 
     public EmailValidator() {
         correctTLDs.add("com");
