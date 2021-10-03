@@ -5,7 +5,7 @@ public class PhoneValidator {
 
     private ArrayList<ValidationRule> phoneRules = new ArrayList<>();
 
-    public PhoneValidator(String configPath) {
+    public PhoneValidator() {
         new ArrayList<String>().add("tld");
         phoneRules.add(new ValidationRule("+370", 12, "LT"));
     }
@@ -15,7 +15,7 @@ public class PhoneValidator {
             return false;
         }
         phoneNumber = changeNumber(phoneNumber);
-        return checkNumbers(phoneNumber); //&& checkIfValidCountryNumber(phoneNumber, countryCode);
+        return checkNumbers(phoneNumber) && checkIfValidCountryNumber(phoneNumber, countryCode);
     }
 
     private boolean checkNumbers (String phoneNumber) {

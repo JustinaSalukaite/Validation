@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PhoneValidatorTest {
 
-    PhoneValidator phoneValidator = new PhoneValidator("confPath");
+    PhoneValidator phoneValidator = new PhoneValidator();
 
     @Test
     void Validate_PhoneNumberContainsNonDigits_ShouldReturnFalse() {
