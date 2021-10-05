@@ -1,5 +1,6 @@
 Justina Šalukaitė 5gr.
 
+
 2 dalis:
 testuotojas: Žygimantas Augustas Keršys (https://github.com/zyke-99/PSP-2021)
 Testai buvo aiškūs ir lengvai suprantama, ko tikimasi iš metodo. Buvo pataisytos kelios klaidos, tokios kaip:
