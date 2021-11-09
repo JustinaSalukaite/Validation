@@ -4,6 +4,7 @@ import com.psp.task3.exception.InvalidUserException;
 import com.psp.task3.model.User;
 import com.psp.task3.repository.UserRepository;
 import com.psp.task3.validation.UserValidator;
+import com.psp.task3.validation.ValidationStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
@@ -15,7 +16,7 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    private UserValidator userValidator;
+    private ValidationStrategy userValidator;
 
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;

@@ -9,7 +9,7 @@ import validators.PhoneValidator;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class UserValidator {
+public class UserValidator implements ValidationStrategy {
 
     private final int MIN_PASSWORD_LENGTH = 5;
 
