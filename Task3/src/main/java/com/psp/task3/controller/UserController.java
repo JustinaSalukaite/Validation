@@ -32,7 +32,7 @@ public class UserController {
     }
 
     @GetMapping("/add-user")
-    public String showAddActionPage(ModelMap model) {
+    public String showAddUserPage(ModelMap model) {
         model.addAttribute("user", new User());
         return "add-user";
     }
