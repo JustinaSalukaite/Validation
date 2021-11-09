@@ -1,3 +1,5 @@
+Justina Šalukaitė 5gr.
+
 Gauta bibliotekos implementacija: https://github.com/KerniusB/PSP
 Šis kodas buvo subuildintas į JAR failą ir naudojamas kaip external biblioteka Task3 modulyje.
 
